@@ -14,7 +14,9 @@ function App() {
         <About />
         <Divider />
         <Experience />
+        <Divider />
         <Projects />
+        <Divider />
         <Skills />
       </main>
     </Layout>

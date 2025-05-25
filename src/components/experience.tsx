@@ -1,9 +1,10 @@
+import Timeline from "./timeline";
+
 function Experience() {
   return (
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Your LinkedIn</a></p>
+    <section id="exp" className="flex flex-col min-h-[90vh] p-5 justify-center max-w-4xl mx-auto mb-15"> 
+      <h1 className="text-4xl font-bold mb-15 text-center">Work Experience</h1>
+      <Timeline />
     </section>
   );
 }

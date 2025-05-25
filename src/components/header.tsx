@@ -54,7 +54,7 @@ function Header() {
           <p className="text-5xl font-bold">Pemba Norsang Sherpa</p>
         </div>
 
-        <div className={`flex gap-15 text-3xl justify-center w-full ${isFixed ? 'fixed top-0 py-10 z-50 px-20 bg-zinc-950' : 'sticky top-10'}`}>
+        <div className={`flex gap-15 text-3xl justify-center w-full h-[10vh] items-center z-50 ${isFixed ? 'fixed top-0 px-20 bg-zinc-950' : 'sticky top-0'}`}>
           {Object.entries(navLinks).map(([path, label]) => (
             <Link
               key={path}

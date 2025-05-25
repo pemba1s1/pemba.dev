@@ -4,7 +4,7 @@ import SocialLinks from "./social-link";
 
 function About() {
   return (
-    <section id="intro" className="h-full max-w-3xl mx-auto mb-15">
+    <section id="intro" className="flex flex-col h-[90vh] justify-center max-w-3xl mx-auto mb-15">
       <img src="/public/me.jpg" alt="Pemba Sherpa" className="h-[100px] w-[100px] rounded-full mb-5" />
       <h1 className="text-2xl font-bold">Pemba Norsang Sherpa</h1>
 
@@ -42,8 +42,8 @@ function About() {
           />
         ))}
       </div>
-      <p className="mt-4 border-b inline-block cursor-pointer">
-        <a href={LINKS.RESUME} target="_blank" rel="noopener noreferrer">
+      <p className="mt-4">
+        <a href={LINKS.RESUME} target="_blank" rel="noopener noreferrer" className="border-b inline-block cursor-pointer">
           View Resume
         </a>
       </p>

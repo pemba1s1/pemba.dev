@@ -10,19 +10,23 @@ function About() {
 
       <div className="text-gray-700 dark:text-gray-300">
         <p className="mt-4">
-          I’m a fullstack software engineer specializing in building web
-          applications powered by modern JavaScript technologies and AI-driven
-          features.
+          I’m a full-stack software engineer specializing in building modern, 
+          scalable web applications using cutting-edge JavaScript technologies 
+          and AI-driven features. I also have experience developing cross-platform 
+          mobile applications, bringing seamless experiences to both web and mobile 
+          users. Currently, I’m diving deeper into Golang and Java to broaden my 
+          backend proficiency.
         </p>
         <p className="mt-4 mb-4">
-          Over the years, I&apos;ve worked on multiple startups to build and
-          launch end-to-end products in insurance, iGaming, and video
-          streaming domains, and have actively contributed to various open
-          source projects.
+          Over the years, I’ve built and launched end-to-end products across 
+          diverse domains including RPA, fundraising CRMs, donation management 
+          platforms, and healthcare. I’ve also been an active contributor to 
+          various open source projects, collaborating with global developer 
+          communities.
         </p>
 
         <p className="mb-4">
-          I&apos;m currently open to new opportunities! If you have an
+          I'm currently open to new opportunities! If you have an
           exciting project or role that aligns with my expertise, please reach
           out at&nbsp;
           <a href="mailto:norsangpemba@gmail.com" className="border-b inline-block">

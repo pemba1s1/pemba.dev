@@ -4,7 +4,7 @@ import SocialLinks from "./social-link";
 
 function About() {
   return (
-    <section id="about" className="flex flex-col h-[90vh] justify-center max-w-3xl mx-auto mb-15">
+    <section id="about" className="flex flex-col min-h-[90vh] justify-center max-w-3xl mx-auto mb-15">
       <img src="/me.jpg" alt="Pemba Sherpa" className="h-[100px] w-[100px] rounded-full mb-5" />
       <h1 className="text-2xl font-bold">Pemba Norsang Sherpa</h1>
 

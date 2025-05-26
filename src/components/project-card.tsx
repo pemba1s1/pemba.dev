@@ -10,14 +10,14 @@ function ProjectCard({ project }: { project: Project }) {
       className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"
       key={project.title}
     >
-      <div className="max-h-[300px] max-w-[600px]">
+      <div className="max-h-[180px] max-w-[420px] lg:max-h-[300px] lg:max-w-[600px]">
         <img alt={project.title} src={projectImage} className="h-full w-full object-cover"/>
       </div>
       <div className="p-4">
-        <a className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+        <a className="text-sm sm:text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
           {project.title}
         </a>
-        <div className=" z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
+        <div className="z-10 mt-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
           {project.description}
         </div>
         <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
@@ -29,7 +29,7 @@ function ProjectCard({ project }: { project: Project }) {
               icon={GitHubIcon}
               href={project.gitUrl}
               className="flex-none"
-              iconClassName="h-8 w-8"
+              iconClassName="h-6 w-6 lg:h-8 lg:w-8"
           />
           )}
           {project.url && (
@@ -37,7 +37,7 @@ function ProjectCard({ project }: { project: Project }) {
               icon={LinkIcon}
               href={project.url}
               className="flex-none"
-              iconClassName="h-8 w-8"
+              iconClassName="h-6 w-6 lg:h-8 lg:w-8"
             />
           )}
         </div>

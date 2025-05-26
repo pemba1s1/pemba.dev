@@ -32,28 +32,29 @@ function Timeline() {
       {experience.map((element: experienceItem, index: number) => {
         return (
           <div key={index} className="flex pb-10 w-full items-center justify-between relative">
-            <div id="exp-time" className={`w-[42%] pt-2 ${index % 2 == 0 ? "order-last" : "order-first text-right"}`}>{element.startYear + " - " + element.endYear}</div>
-            <div className="w-[15%] justify-center pt-0.5 sm:flex">
+            <div id="exp-time" className={`w-[20%] sm:w-[42%] pt-2 text-xs sm:text-base ${index % 2 == 0 ? "sm:order-last" : "sm:order-first sm:text-right"}`}>{element.startYear + " - " + element.endYear}</div>
+            <div className="relative w-[10%] items-center justify-center pt-0.5 sm:flex">
+              {/* <div
+                className={`bg-zinc-950 h-[2px] w-8 translate-y-5 opacity-30 z-5 ${index % 2 == 0 ? "sm:order-last" : "sm:order-first"}`}
+              ></div> */}
+              <ComputerIcon className={`h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 flex-none ${ fillColors[index % 5]} z-5`}/>
+              <div className={`absolute top-0 w-px border-2 h-full ${borderColors[index % 5]} z-1 opacity-30`}></div>
               <div
-                className={`bg-zinc-950 h-[2px] w-8 translate-y-5 opacity-30 z-5 ${index % 2 == 0 ? "order-last" : "order-first"}`}
-              ></div>
-              <ComputerIcon className={`h-10 w-10 flex-none ${ fillColors[index % 5]} z-5`}/>
-              <div
-                className={`${bgColors[index % 5]} h-[2px] w-8 translate-y-5 opacity-30 z-5 ${index % 2 != 0 ? "order-last" : "order-first"}`}
+                className={`${bgColors[index % 5]} absolute top-[50%] h-px sm:h-[2px] w-10 opacity-30 z-5 ${index % 2 != 0 ? "sm:right-0" : "sm:left-0"}`}
               ></div>
             </div>
-            <div id="exp-info" className={`w-[42%] border border-gray-600 rounded-lg px-8 py-6 bg-gray-800 text-center ${index % 2 != 0 ? "order-last" : "order-first"}`}>
-              <div className="text-xl font-bold mb-2">{element.title}</div>
-              <div className="text-gray-300 mb-2 text-sm italic">
+            <div id="exp-info" className={`w-[60%] sm:w-[42%] border border-gray-600 rounded-lg p-2 sm:px-8 sm:py-6 bg-gray-800 text-center ${index % 2 != 0 ? "sm:order-last" : "sm:order-first"}`}>
+              <div className="text-sm sm:text-xl font-bold mb-2">{element.title}</div>
+              <div className="text-gray-300 mb-2 text-xs sm:text-base italic">
                 {element.organization + " | " + element.location}
               </div>
-              {element.description && <div className="mb-2 text-left">{element.description}</div> }
+              {element.description && <div className="mb-2 text-center text-xs sm:text-base">{element.description}</div> }
               <div className="flex flex-wrap justify-center">
                 {element.tech.map((tech, index) => {
                   return (
                     <span
                       key={index}
-                      className="bg-gray-900 rounded-xl px-2 py-1 text-sm m-1"
+                      className="bg-gray-900 rounded-xl px-2 py-1 sm:px-3 sm:py-2 text-xs sm:text-sm m-1"
                     >
                       {tech}
                     </span>
@@ -67,7 +68,7 @@ function Timeline() {
               </a> */}
             </div>
             <div className="absolute flex items-center h-full w-full">
-              <div className={`mx-auto border-l-2 h-full ${borderColors[index % 5]} z-1 opacity-30`}></div>
+              <div className={`ml-[28%] sm:mx-auto border-l-2 h-full ${borderColors[index % 5]} z-1 opacity-30`}></div>
             </div>
           </div>
         );

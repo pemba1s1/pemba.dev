@@ -1,15 +1,14 @@
 
-import { Link } from 'react-router-dom';
 import { SOCIALS } from '../data/socials';
 import SocialLinks from './social-link';
 import { useEffect, useState } from 'react';
 
 const navLinks = {
-  "/": "./",
-  "/about": "./about-me",
-  "/experience": "./experience",
-  "/projects": "./projects",
-  "skills": "./skills",
+  "home": "./",
+  "about": "./about-me",
+  "experience": "./experience",
+  "projects": "./projects",
+  // "skills": "./skills",
 }
 
 function Header() {
@@ -27,8 +26,17 @@ function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleLinkClick = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -window.innerHeight * 0.10; // 10vh offset
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
   return (
-    <div className='h-screen'>
+    <div className='h-screen' id="home">
       <header className="flex justify-between items-center pt-12 pb-7 text-4xl">
         <div className="flex gap-2 text-neutral-500 hover:text-zinc-200 transition items-center">
           <p className='font-bold text-3xl'>&lt;&gt;</p>
@@ -57,13 +65,13 @@ function Header() {
 
         <div className={`flex gap-15 text-3xl justify-center w-full h-[10vh] items-center z-50 ${isFixed ? 'fixed top-0 px-20 bg-zinc-950' : 'sticky top-0'}`}>
           {Object.entries(navLinks).map(([path, label]) => (
-            <Link
+            <button
               key={path}
-              to={path}
-              className={`text-neutral-500 transition-all hover:text-gray-100`}
+              onClick={() => handleLinkClick(path.replace('/', ''))}
+              className={`text-neutral-500 transition-all hover:text-gray-100 cursor-pointer`}
             >
               {label}
-            </Link>
+            </button>
           ))}
         </div>
       </div>

@@ -39,6 +39,7 @@ function About() {
             aria-label={`Follow on ${social.label}`}
             href={social.href}
             icon={social.icon}
+            iconClassName="h-8 w-8"
           />
         ))}
       </div>

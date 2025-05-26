@@ -1,15 +1,8 @@
 function Skills() {
   return (
-    <div className="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>CSS</li>
-        <li>HTML</li>
-      </ul>
-    </div>
+    <section id="skills" className="flex flex-col min-h-[90vh] p-5 justify-center max-w-4xl mx-auto mb-15">
+      <h1 className="text-4xl font-bold mb-15 text-center">Skills</h1>
+    </section>
   );
 }
 

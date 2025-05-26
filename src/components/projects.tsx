@@ -1,12 +1,16 @@
+import projects from "../data/projects";
+import ProjectCard from "./project-card";
+
 function Projects() {
   return (
-    <section id="projects" className="h-[600px] border-2">
-      <h2>Projects</h2>
-      <ul>
-        <li>Project 1 - <a href="#">View Details</a></li>
-        <li>Project 2 - <a href="#">View Details</a></li>
-        <li>Project 3 - <a href="#">View Details</a></li>
-      </ul>
+    <section id="projects" className="flex flex-col min-h-[90vh] p-5 justify-center mx-auto mb-15">
+      <h1 className="text-4xl font-bold mb-15 text-center">Projects</h1>
+      <div
+        role="list"
+        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 xl:grid-cols-3"
+      >
+        { projects.map((project, index) => <ProjectCard key={index} project={project} />)}
+      </div>
     </section>
   );
 }

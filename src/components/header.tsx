@@ -42,6 +42,7 @@ function Header() {
                 aria-label={`Follow on ${social.label}`}
                 href={social.href}
                 icon={social.icon}
+                iconClassName="h-10 w-10"
               />
             ))
           }

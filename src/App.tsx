@@ -5,7 +5,7 @@ import Divider from './components/divider';
 import Projects from './components/projects';
 import Layout from './layout';
 import './styles/App.css';
-import Skills from './components/skills';
+// import Skills from './components/skills';
 
 function App() {
   return (
@@ -16,8 +16,7 @@ function App() {
         <Experience />
         <Divider />
         <Projects />
-        <Divider />
-        <Skills />
+        {/* <Skills /> */}
       </main>
     </Layout>
   );

@@ -1,7 +1,6 @@
 
 import experience, { type experienceItem } from "../data/experience";
 import { ComputerIcon } from "../icons";
-import TechCard from "./tech-card";
 
 const colors = [
   "red-500",
@@ -34,7 +33,16 @@ function Timeline() {
               </div>
               {element.description && <div className="mb-2 text-left">{element.description}</div> }
               <div className="flex flex-wrap justify-center">
-                {element.tech.map((tech, index) => <TechCard key={index} tech={tech} />)}
+                {element.tech.map((tech, index) => {
+                  return (
+                    <span
+                      key={index}
+                      className="bg-gray-900 rounded-xl px-2 py-1 text-sm m-1"
+                    >
+                      {tech}
+                    </span>
+                  );
+                })}
               </div>
               {/* <a
                 className={`${color} text-gray-950 font-medium px-4 py-1 rounded-md mx-auto cursor-pointer hover:text-white`}

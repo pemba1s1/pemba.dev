@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 function Projects() {
   return (
-    <section id="projects" className="flex flex-col min-h-[90vh] p-5 justify-center mx-auto mb-15">
+    <section id="projects" className="flex flex-col min-h-[90vh] p-5 justify-center mx-auto">
       <h1 className="text-4xl font-bold mb-15 text-center">Projects</h1>
       <div
         role="list"

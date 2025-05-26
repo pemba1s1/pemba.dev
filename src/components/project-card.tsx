@@ -4,7 +4,7 @@ import SocialLink from "./social-link";
 import TechCard from "./tech-card";
 
 function ProjectCard({ project }: { project: Project }) {
-  const projectImage = "/public/projects/" + project.image;
+  const projectImage = "/projects/" + project.image;
   return (
     <div
       className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"

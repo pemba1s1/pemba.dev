@@ -50,7 +50,7 @@ function Header() {
       </header>
       <div className="flex flex-col items-center justify-evenly h-[80%]">
         <div className='flex flex-col items-center gap-5'>
-          <img src='/public/me.jpg' alt="Pemba Sherpa" className='max-h-[300px] max-w-[300px] rounded-full mx-auto' />
+          <img src='/me.jpg' alt="Pemba Sherpa" className='max-h-[300px] max-w-[300px] rounded-full mx-auto' />
           <p className="text-3xl">Software Engineer</p>
           <p className="text-5xl font-bold">Pemba Norsang Sherpa</p>
         </div>

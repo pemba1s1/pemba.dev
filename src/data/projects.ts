@@ -54,7 +54,7 @@ const projects : Project[] = [
   },
   {
     "title":"Store Biz",
-    "description":"Full stack e-commerce application with features like user authentication, product management, order management, and payment processing.",
+    "description":"Full stack e-commerce application with features like user authentication, product management, order management, and payment processing. Built an admin dashboard for managing products and orders.",
     "image":"storebiz.png",
     "url": "https://store-bizstore.vercel.app/",
     "gitUrl":"https://github.com/pemba1s1/store-biz-ecom",
@@ -62,7 +62,7 @@ const projects : Project[] = [
   },
   {
     "title":"Chess",
-    "description":"My personal portfolio website to showcase my projects and skills.",
+    "description":"A real-time multiplayer chess game built using Next.js and Golang using Three.js for 3D rendring and gRPC for fast bidirectional communication between server and client. Currently only frontend is hosted so multiplayer is not supported online.",
     "image":"chess.png",
     "url":"https://chess-frontend-chi.vercel.app/",
     "gitUrl":"https://github.com/pemba1s1/grpc-chess-backend",

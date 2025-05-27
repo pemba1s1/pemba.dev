@@ -64,7 +64,7 @@ function Header() {
           <p className="text-2xl sm:text-5xl font-bold">Pemba Norsang Sherpa</p>
         </div>
 
-        <div className={`flex gap-10 sm:gap-25 sm:text-xl 2xl:text-3xl justify-center w-full xl:w-auto lg:px-20 h-[5vh] 2xl:h-[10vh] items-center z-30 ${isFixed ? 'fixed top-0 bg-zinc-950' : 'sticky top-0'}`}>
+        <div className={`flex gap-10 sm:gap-25 sm:text-xl 2xl:text-3xl justify-center w-screen xl:w-auto lg:px-20 h-[5vh] 2xl:h-[10vh] items-center z-30 ${isFixed ? 'fixed top-0 bg-zinc-950' : 'sticky top-0'}`}>
           {Object.entries(navLinks).map(([path, label]) => (
             <button
               key={path}

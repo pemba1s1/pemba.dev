@@ -57,7 +57,7 @@ function Header() {
           }
         </div>
       </header>
-      <div className="flex flex-col items-center justify-evenly h-[80vh]">
+      <div className="flex flex-col items-center justify-evenly min-h-[80vh] pb-10">
         <div className='flex flex-col items-center gap-5'>
           <img src='/me.jpg' alt="Pemba Sherpa" className='max-h-[300px] max-w-[300px] rounded-full mx-auto' />
           <p className="text-lg sm:text-3xl">Software Engineer</p>

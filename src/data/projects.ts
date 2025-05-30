@@ -89,6 +89,13 @@ const projects : Project[] = [
     "gitUrl":"https://github.com/ClinicianFOCUS/openo-connect",
     "techStack": ["React Native", "Java"]
   },
+  {
+    "title": "Url Shortener",
+    "description": "A URL shortening application built with Spring Boot and Java, utilizing Thymeleaf for the frontend, PostgreSQL for data storage, Redis for caching, JPA for ORM, and JUnit 5 for testing.",
+    "image": "url-shortener.png",
+    "gitUrl": "https://github.com/pemba1s1/url-shortner",
+    "techStack": ["Java", "Spring Boot", "Thymeleaf", "PostgreSQL", "Redis", "JPA", "JUnit 5"]
+  }
 ]
 
 export default projects.reverse();
